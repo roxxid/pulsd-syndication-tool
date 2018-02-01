@@ -1,0 +1,27 @@
+<h2>
+  List of events:
+</h2>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Start Date</th>
+    <th>Start Time</th>
+    <th>End Date</th>
+    <th>End Time</th>
+    <th>Cost</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let event of events">
+    <td>{{event.name}}</td>
+    <td>{{event.description}}</td>
+    <td>{{event.startDate | date}}</td>
+    <td>{{event.startTime}}</td>
+    <td>{{event.endDate | date}}</td>
+    <td>{{event.endTime}}</td>
+    <td>{{event.currency}}</td>
+  </tr>
+  </tbody>
+</table>

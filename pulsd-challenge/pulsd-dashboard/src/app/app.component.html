@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <span>EVENTS</span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="example-fill-remaining-space"></span>
+</mat-toolbar>
+
+<mat-tab-group>
+  <mat-tab label="LIST">
+    <app-event-list></app-event-list>
+  </mat-tab>
+  <mat-tab label="CREATE">
+    <app-add-event></app-add-event>
+  </mat-tab>
+  <mat-tab label="POST">
+    <app-auto-posting></app-auto-posting>
+  </mat-tab>
+</mat-tab-group>
+
